@@ -1,0 +1,77 @@
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  color: #051b1f;
+}
+
+.box {
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.button {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.27px;
+  border-radius: 5px;
+  background: #ff4500;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #bd3502;
+  }
+}
+
+.owl {
+  &-stage {
+    display: flex;
+  }
+
+  &-nav {
+    display: none;
+  }
+
+  &-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &-dot {
+    border-radius: 2.5px;
+    width: 21px;
+    height: 7px;
+    background: #a7cde0;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &-dot.active {
+    background: #ff4500;
+  }
+}
