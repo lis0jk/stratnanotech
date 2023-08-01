@@ -1,0 +1,63 @@
+.mission-company {
+  margin-bottom: 88px;
+  &__title {
+    margin-bottom: 47px;
+    color: #292929;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 88px;
+    align-items: start;
+  }
+
+  &__text {
+    color: #292929;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 182.182%;
+    max-width: 45%;
+  }
+
+  &__img {
+    object-fit: cover;
+    max-width: 40%;
+  }
+
+  &__eco {
+    background: url("../images/mission/travlenie-back.png");
+    padding: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &-title {
+      color: #292929;
+      text-align: right;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.2px;
+      padding-bottom: 23px;
+    }
+
+    &-text {
+      color: #292929;
+      text-align: right;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 182.182%;
+      padding-bottom: 23px;
+      max-width: 655px;
+    }
+  }
+}

@@ -3,20 +3,37 @@
   @@include('../blocks/head/head.html')
 
   <body>
-    <div class="wrapper">
+    <div class="wrapper career-page">
       <!-- @@include('../blocks/header/header.html')
       /.header -->
 
       <main class="main">
         <div class="container">
+          @@include('../blocks/career/description/description.html')
+          <!-- /.description -->
+
           @@include('../blocks/team/values/values.html')
           <!-- /.values -->
+
+          @@include('../blocks/career/vacancy/vacancy.html')
+          <!-- /.vacancy -->
+        </div>
+
+        @@include('../blocks/career/resume/resume.html')
+        <!-- /.resume -->
+
+        <div class="container">
+          @@include('../blocks/career/gallery/gallery.html')
+          <!-- /.gallery -->
         </div>
       </main>
       <!-- /.main -->
 
       @@include('../blocks/footer/footer.html')
       <!-- /.footer -->
+
+      @@include('../blocks/modals/modalVacancy.html')
+      <!-- /.modalVacancy -->
     </div>
     <!-- /.wrapper -->
 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('../blocks/head/head.html')
+
+  <body>
+    <div class="wrapper">
+      <!-- @@include('../blocks/header/header.html')
+      /.header -->
+
+      <main class="main">
+        <div class="container">
+          <section class="contact">
+            <h1 class="contact__title">Контакты</h1>
+            <div class="contact__block">
+              <div id="map" class="contact__map">
+                <script src="https://api-maps.yandex.ru/2.1/?apikey=45da9988-9f43-4981-87ee-bb57fae32aa2&lang=ru_RU"></script>
+              </div>
+            </div>
+            <div class="contact__address">
+              <div class="contact__address-item">
+                <div class="contact__address-place">
+                  <img
+                    class="contact__address-icon"
+                    src="/images/icon/map-black.svg"
+                    alt=""
+                  />
+                  <p class="contact__address-text">
+                    <b>Офис в Москве:</b>
+                    Российская Федерация, г. Москва, 123112 наб. Пресненская,
+                    д.12, эт. 44, оф. 4402, пом.9
+                  </p>
+                </div>
+                <div class="contact__address-mail">
+                  <img
+                    class="contact__address-icon"
+                    src="/images/icon/mail.svg"
+                    alt=""
+                  />
+                  <a
+                    class="contact__address-text"
+                    href="mailto:sales@stratnanotech.com"
+                    >sales@stratnanotech.com</a
+                  >
+                </div>
+                <div class="contact__address-tel">
+                  <img
+                    class="contact__address-icon"
+                    src="/images/icon/tel.svg"
+                    alt=""
+                  />
+                  <a class="contact__address-text" href="tel:+74997559025"
+                    >+7 (499) 755 90 25</a
+                  >
+                </div>
+              </div>
+              <div class="contact__address-item">
+                <div class="contact__address-place">
+                  <img
+                    class="contact__address-icon"
+                    src="/images/icon/map-black.svg"
+                    alt=""
+                  />
+                  <p class="contact__address-text">
+                    <b>Офис в Минске:</b> Республика Беларусь, г. Минск, 220070
+                    ул. Радиальная, 54б-22б
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="contact__media">
+              <img
+                class="contact__media-item"
+                src="/images/icon/youtube.svg"
+                alt=""
+              />
+              <img
+                class="contact__media-item"
+                src="/images/icon/vk.svg"
+                alt=""
+              />
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- /.main -->
+
+      @@include('../blocks/footer/footer.html')
+      <!-- /.footer -->
+    </div>
+    <!-- /.wrapper -->
+
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+  </body>
+</html>

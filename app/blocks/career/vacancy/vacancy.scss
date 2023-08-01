@@ -1,0 +1,74 @@
+.vacancy {
+  margin-bottom: 88px;
+
+  &__title {
+    margin-bottom: 43px;
+    color: #292929;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.9px;
+  }
+
+  &__slider {
+    &-item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+      margin-bottom: 56px;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d5d5d5;
+    transition: all 0.3s;
+
+    &:hover {
+      border: 1px solid #ff4500;
+    }
+
+    &-title {
+      display: flex;
+      color: #ff4500;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 10px;
+    }
+
+    &-down {
+      margin-left: 10px;
+    }
+
+    &-salary {
+      color: #292929;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      color: #292929;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      margin-bottom: 30px;
+    }
+
+    &-subtitle {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__button {
+    padding: 15px 30px;
+  }
+}

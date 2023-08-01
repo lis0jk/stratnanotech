@@ -1,0 +1,21 @@
+.description {
+  margin-bottom: 88px;
+
+  &__title {
+    margin-bottom: 25px;
+    color: #292929;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+  }
+
+  &__text {
+    color: #292929;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 182.182%;
+  }
+}

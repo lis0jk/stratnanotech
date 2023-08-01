@@ -1,0 +1,78 @@
+.modal {
+  display: none;
+  &__overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #f1f1f4;
+    opacity: 0.4;
+    z-index: 12;
+  }
+
+  &__form {
+    position: absolute;
+    max-width: 838px;
+    max-height: 650px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    overflow-y: scroll;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    // transition: all 0.5s;
+    cursor: pointer;
+
+    // &:hover {
+    //   transform: rotate(90deg);
+    // }
+  }
+
+  &__title {
+    color: #ff4500;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 30px;
+  }
+
+  &__salary {
+    color: #292929;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__text {
+    color: #292929;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+
+  &__subtitle {
+    padding-bottom: 16px;
+  }
+
+  &__description {
+    padding-bottom: 30px;
+  }
+
+  &__button {
+    padding: 15px 30px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
