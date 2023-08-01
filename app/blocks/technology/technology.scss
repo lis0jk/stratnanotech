@@ -1,0 +1,14 @@
+.technology {
+}
+.technology {
+  background: url("../images/mission/technology.png");
+  padding: 66px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__link {
+    padding: 18px 30px;
+  }
+}

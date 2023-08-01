@@ -8,11 +8,26 @@
       /.header -->
 
       <main class="main">
-        <div class="container">
-          <section class="mission-company">
-            <h1 class="mission-company__title">Сертификаты и экология</h1>
-            <div class="mission-company__info">
-              <p class="mission-company__text">
+        <section class="series">
+          <div class="series__download">
+            <button class="mission__download button">
+              Скачать брошюру
+              <img
+                class="mission__download-icon"
+                src="images/about_us/download.svg"
+                alt="Скачать"
+              />
+            </button>
+          </div>
+
+          <div class="container">
+            <div class="series__info">
+              <img
+                class="series__img"
+                src="/images/about_us/video.png"
+                alt=""
+              />
+              <p class="series__text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa. Cum sociis natoque
                 penatibus et magnis dis parturient montes, nascetur ridiculus
@@ -28,41 +43,17 @@
                 rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
                 Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
                 rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem
-                quam semper libero, sit amet adipiscing sem neque sed ipsum.
+                quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam
+                quam nunc, blandit vel, luctus pulvinar.
               </p>
-              <img
-                class="mission-company__img"
-                src="/images/mission/travlenie.png"
-                alt=""
-              />
             </div>
-
-            <div class="mission-company__eco">
-              <h2 class="mission-company__eco-title">Миссия компании</h2>
-              <p class="mission-company__eco-text">
-                Способствовать процветанию нашей страны, переводя научные знания
-                и разработки в реальное производство через создание современного
-                и практичного технологического оборудования
-              </p>
-              <button class="mission__download button">
-                Скачать презентацию о компании
-                <img
-                  class="mission__download-icon"
-                  src="/images/about_us/download.svg"
-                  alt=""
-                />
-              </button>
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
       <!-- /.main -->
 
       @@include('../blocks/footer/footer.html')
       <!-- /.footer -->
-
-      @@include('../blocks/modals/modalVacancy.html')
-      <!-- /.modalVacancy -->
     </div>
     <!-- /.wrapper -->
 
