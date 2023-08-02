@@ -1,0 +1,58 @@
+.libra-about {
+  &__title {
+    color: #292929;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    margin-bottom: 47px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    width: 60%;
+    color: #292929;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 182.182%;
+  }
+
+  &__slider {
+    width: 30%;
+    overflow: hidden;
+
+    &-img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &-item {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__download {
+    display: flex;
+    margin-bottom: 88px;
+    &-item {
+      margin-right: 40px;
+
+      &--second {
+        display: flex;
+        align-items: center;
+        background: #739db2;
+        padding: 18px 29px;
+        &:hover {
+          background: #ff4500;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.category {
+  &__title {
+    color: #292929;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    margin-bottom: 47px;
+  }
+
+  &__block {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    padding: 10px;
+    background: #739db2;
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+
+    &:hover {
+      background: #ff4500;
+      .category__button-icon--up {
+        display: block;
+      }
+
+      .category__button-icon--down {
+        display: none;
+      }
+    }
+
+    &-icon {
+      margin-left: 10px;
+
+      &--up {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-question,
+  &-team {
+    padding: 76px;
+  }
+
+  &-technology {
+    padding: 50px;
+    background: url("../images/end/technology.png");
+
+    &__text {
+      margin-bottom: 62px;
+    }
+  }
+
+  &-question {
+    background: url("../images/end/question.png");
+  }
+
+  &-team {
+    background: url("../images/end/team.png");
+  }
+
+  &-services {
+    padding: 50px;
+    background: url("../images/end/services.png");
+  }
+
+  &-equiment {
+    padding: 50px;
+    background: url("../images/end/equiment.png");
+  }
+
+  &__text {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 100px;
+  }
+
+  &__button {
+    padding: 8px 30px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &-mail {
+    background: #3c5461;
+    padding: 23px;
+
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__icon {
+      margin-right: 21px;
+    }
+
+    &__text {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &__entry {
+      display: flex;
+      position: relative;
+      width: 511px;
+    }
+
+    &__input {
+      border-radius: 5px;
+      background: #f6f6f6;
+      width: 373px;
+      padding: 13px 16px;
+      &::placeholder {
+        color: #a9a9a9;
+      }
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &__button {
+      position: absolute;
+      right: 12px;
+
+      padding: 13px 15px;
+    }
+  }
+}

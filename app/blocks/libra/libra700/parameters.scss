@@ -1,0 +1,32 @@
+.parameters {
+  &__title {
+    color: #292929;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 21px;
+  }
+
+  &__table {
+    width: 100%;
+    margin-bottom: 88px;
+
+    td {
+      padding: 10px;
+      border: 1px solid #c1c1c1;
+
+      &:first-child {
+        width: 50%;
+      }
+    }
+  }
+  .tr-orange td {
+    background-color: #ff4500 !important;
+    color: #fff !important;
+  }
+
+  .td-big {
+    text-align: center;
+  }
+}

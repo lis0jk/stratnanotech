@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const aboutPageSlider = new Slider();
   const careerPageSlider = new Slider();
   const galleryPageSlider = new Slider();
+  const libraPageSlider = new Slider();
 
   if (wrapper.classList.contains("about-page")) {
     aboutPageSlider.addSlider(".development__slider", {
@@ -31,6 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (wrapper.classList.contains("career-page")) {
     galleryPageSlider.addSlider(".gallery__slider", {
+      items: 1,
+    });
+  }
+
+  if (wrapper.classList.contains("libra-page")) {
+    libraPageSlider.addSlider(".libra-about__slider", {
       items: 1,
     });
   }
