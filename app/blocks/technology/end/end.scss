@@ -9,11 +9,13 @@
   }
 
   &-technology {
-    padding: 50px;
+    padding: 43px;
     background: url("../images/end/technology.png");
 
     &__text {
-      margin-bottom: 62px;
+      text-align: center;
+      font-size: 30px !important;
+      margin-bottom: 50px;
     }
   }
 
@@ -26,12 +28,12 @@
   }
 
   &-services {
-    padding: 50px;
+    padding: 43px;
     background: url("../images/end/services.png");
   }
 
   &-equiment {
-    padding: 50px;
+    padding: 43px;
     background: url("../images/end/equiment.png");
   }
 

@@ -8,11 +8,13 @@
   padding: 76px;
 }
 .end-technology {
-  padding: 50px;
+  padding: 43px;
   background: url("../images/end/technology.png");
 }
 .end-technology__text {
-  margin-bottom: 62px;
+  text-align: center;
+  font-size: 30px !important;
+  margin-bottom: 50px;
 }
 .end-question {
   background: url("../images/end/question.png");
@@ -21,11 +23,11 @@
   background: url("../images/end/team.png");
 }
 .end-services {
-  padding: 50px;
+  padding: 43px;
   background: url("../images/end/services.png");
 }
 .end-equiment {
-  padding: 50px;
+  padding: 43px;
   background: url("../images/end/equiment.png");
 }
 .end__text {
