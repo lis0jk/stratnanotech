@@ -1,0 +1,38 @@
+.button {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.27px;
+  border-radius: 5px;
+  background: #ff4500;
+  transition: all 0.3s;
+}
+.button:hover {
+  background: #bd3502;
+}
+
+.owl-stage {
+  display: flex;
+}
+.owl-nav {
+  display: none;
+}
+.owl-dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.owl-dot {
+  border-radius: 2.5px;
+  width: 21px;
+  height: 7px;
+  background: #a7cde0;
+}
+.owl-dot:not(:last-child) {
+  margin-right: 10px;
+}
+.owl-dot.active {
+  background: #ff4500;
+}
