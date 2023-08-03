@@ -40,7 +40,9 @@
 .end__button {
   padding: 8px 30px;
   display: flex;
-  align-items: center;
+}
+.end__button-tech {
+  margin: 0 auto;
 }
 .end-mail {
   background: #3c5461;

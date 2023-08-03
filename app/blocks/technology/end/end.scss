@@ -48,7 +48,10 @@
   &__button {
     padding: 8px 30px;
     display: flex;
-    align-items: center;
+
+    &-tech {
+      margin: 0 auto;
+    }
   }
 
   &-mail {
