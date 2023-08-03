@@ -59,8 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-
-  openModal();
+  if (wrapper.classList.contains("career-page")) {
+    openModal();
+  }
 
   function openImg() {
     const galleryImages = document.querySelectorAll(".gallery__img");
@@ -97,7 +98,9 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-  openImg();
+  if (wrapper.classList.contains("career-page")) {
+    openImg();
+  }
 
   function toggleSliderText() {
     const checkbox = document.getElementById("read-more-checker");
@@ -114,8 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-
-  toggleSliderText();
+  if (wrapper.classList.contains("blog-page")) {
+    toggleSliderText();
+  }
 });
 
 if (typeof ymaps !== "undefined") {
