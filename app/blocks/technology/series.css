@@ -1,0 +1,27 @@
+.series__download {
+  background: url("../images/mission/series.png");
+  padding: 66px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 88px;
+}
+.series__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 88px;
+}
+.series__img {
+  width: 48%;
+  object-fit: cover;
+}
+.series__text {
+  width: 48%;
+  color: #292929;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 182.182%;
+}

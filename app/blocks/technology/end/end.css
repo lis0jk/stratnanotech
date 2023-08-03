@@ -1,0 +1,88 @@
+.end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.end-question,
+.end-team {
+  padding: 76px;
+}
+.end-technology {
+  padding: 50px;
+  background: url("../images/end/technology.png");
+}
+.end-technology__text {
+  margin-bottom: 62px;
+}
+.end-question {
+  background: url("../images/end/question.png");
+}
+.end-team {
+  background: url("../images/end/team.png");
+}
+.end-services {
+  padding: 50px;
+  background: url("../images/end/services.png");
+}
+.end-equiment {
+  padding: 50px;
+  background: url("../images/end/equiment.png");
+}
+.end__text {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 100px;
+}
+.end__button {
+  padding: 8px 30px;
+  display: flex;
+  margin: 0 auto;
+}
+.end-mail {
+  background: #3c5461;
+  padding: 23px;
+}
+.end-mail__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.end-mail__icon {
+  margin-right: 21px;
+}
+.end-mail__text {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.end-mail__entry {
+  display: flex;
+  position: relative;
+  width: 511px;
+}
+.end-mail__input {
+  border-radius: 5px;
+  background: #f6f6f6;
+  width: 373px;
+  padding: 13px 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.end-mail__input::placeholder {
+  color: #a9a9a9;
+}
+.end-mail__button {
+  position: absolute;
+  right: 12 15px;
+  padding: 13px 15px;
+}

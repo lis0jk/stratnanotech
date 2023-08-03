@@ -1,0 +1,87 @@
+.button {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.27px;
+  border-radius: 5px;
+  background: #ff4500;
+  transition: all 0.3s;
+}
+.button:hover {
+  background: #bd3502;
+}
+
+.owl-stage {
+  display: flex;
+}
+.owl-nav {
+  display: none;
+}
+.owl-dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.owl-dot {
+  border-radius: 2.5px;
+  width: 21px;
+  height: 7px;
+  background: #a7cde0;
+}
+.owl-dot:not(:last-child) {
+  margin-right: 10px;
+}
+.owl-dot.active {
+  background: #ff4500;
+}
+.libra-about__title {
+  color: #292929;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  margin-bottom: 47px;
+}
+.libra-about__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.libra-about__text {
+  width: 60%;
+  color: #292929;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 182.182%;
+}
+.libra-about__slider {
+  width: 30%;
+  overflow: hidden;
+}
+.libra-about__slider-img {
+  width: 100%;
+  object-fit: cover;
+}
+.libra-about__slider-item {
+  margin-bottom: 36px;
+}
+.libra-about__download {
+  display: flex;
+  margin-bottom: 88px;
+}
+.libra-about__download-item {
+  margin-right: 40px;
+}
+.libra-about__download-item--second {
+  display: flex;
+  align-items: center;
+  background: #739db2;
+  padding: 18px 29px;
+}
+.libra-about__download-item--second:hover {
+  background: #ff4500;
+}

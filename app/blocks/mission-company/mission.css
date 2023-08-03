@@ -1,0 +1,89 @@
+.parameters__title {
+  color: #292929;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 21px;
+}
+
+.mission-company {
+  margin-bottom: 88px;
+}
+.mission-company__title {
+  margin-bottom: 47px;
+  color: #292929;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.mission-company__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 88px;
+  align-items: start;
+}
+.mission-company__text {
+  color: #292929;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 182.182%;
+  max-width: 45%;
+}
+.mission-company__img {
+  object-fit: cover;
+  max-width: 40%;
+}
+.mission-company__eco {
+  background: url("../images/mission/travlenie-back.png");
+  padding: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.mission-company__eco-title {
+  color: #292929;
+  text-align: right;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  padding-bottom: 23px;
+}
+.mission-company__eco-text {
+  color: #292929;
+  text-align: right;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 182.182%;
+  padding-bottom: 23px;
+  max-width: 655px;
+}
+
+.parameters__table {
+  width: 100%;
+  margin-bottom: 88px;
+}
+
+.parameters__table td {
+  padding: 10px;
+  border: 1px solid #c1c1c1;
+}
+
+.parameters__table td:first-child {
+  width: 50%;
+}
+
+.parameters .tr-orange td {
+  background-color: #ff4500 !important;
+  color: #fff !important;
+}
+
+.parameters .td-big {
+  text-align: center;
+}

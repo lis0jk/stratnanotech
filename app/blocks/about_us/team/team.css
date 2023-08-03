@@ -1,0 +1,75 @@
+.team {
+  background: url("../images/about_us/team.png");
+  padding-top: 67px;
+  padding-bottom: 106px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team__title {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-align: center;
+  padding-bottom: 58px;
+}
+.team__info {
+  max-width: 1186px;
+  display: flex;
+  justify-content: space-between;
+}
+.team__subtitle {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.team__item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.team__item-second {
+  width: 35%;
+}
+.team__line {
+  margin-left: 20px;
+  width: 36px;
+  height: 2px;
+  background-color: #ff4500;
+}
+.team__text {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 182.182%;
+  margin-bottom: 30px;
+  max-width: 557px;
+}
+.team__stat {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 182.182%;
+}
+.team__stat-pers {
+  color: #ff4500;
+}
+.team__about {
+  margin-bottom: 30px;
+}
+.team__button {
+  padding: 8px 12px;
+  width: fit-content;
+}
