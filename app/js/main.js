@@ -101,27 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-$(document).ready(function () {
-  $(".vacancy__item").click(function () {
-    const modalId = $(this).data("modal-id");
-    $(`#modal${modalId}`).fadeIn();
-  });
-
-  $(".vacancy__modal").click(function (e) {
-    if (e.target === this) {
-      $(this).fadeOut();
-    }
-  });
-
-  $(".modal__close").click(function () {
-    $(this).closest(".vacancy__modal").fadeOut();
-  });
-
-  $(".modal").click(function (e) {
-    e.stopPropagation();
-  });
-});
-
 if (typeof ymaps !== "undefined") {
   function init() {
     var coords1 = [55.749633, 37.537434];
