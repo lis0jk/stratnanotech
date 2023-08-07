@@ -14,9 +14,9 @@
     position: absolute;
     max-width: 838px;
     max-height: 650px;
-    left: 50%;
+    left: 10%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
     z-index: 10000;
     background-color: #ffffff;
     border-radius: 20px;
@@ -28,12 +28,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    // transition: all 0.5s;
     cursor: pointer;
-
-    // &:hover {
-    //   transform: rotate(90deg);
-    // }
   }
 
   &__title {
