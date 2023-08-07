@@ -10,11 +10,15 @@
   line-height: normal;
   letter-spacing: 0.9px;
 }
+.vacancy__slider {
+  overflow: hidden;
+}
 .vacancy__slider-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   margin-bottom: 56px;
+  position: relative;
 }
 .vacancy__item {
   cursor: pointer;

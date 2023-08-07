@@ -644,6 +644,9 @@ body {
   line-height: normal;
   letter-spacing: 0.9px;
 }
+.vacancy__slider {
+  overflow: hidden;
+}
 .vacancy__slider-item {
   display: -ms-grid;
   display: grid;
@@ -651,6 +654,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   margin-bottom: 56px;
+  position: relative;
 }
 .vacancy__item {
   cursor: pointer;
@@ -716,11 +720,11 @@ body {
   position: absolute;
   max-width: 838px;
   max-height: 650px;
-  left: 10%;
+  left: 50%;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 10000;
   background-color: #fff;
   border-radius: 20px;

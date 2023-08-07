@@ -12,11 +12,13 @@
   }
 
   &__slider {
+    overflow: hidden;
     &-item {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 50px;
       margin-bottom: 56px;
+      position: relative;
     }
   }
 
