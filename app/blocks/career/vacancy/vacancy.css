@@ -60,3 +60,6 @@
 .vacancy__button {
   padding: 15px 30px;
 }
+.vacancy__modal {
+  display: none;
+}

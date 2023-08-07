@@ -42,27 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  function openModal() {
-    const formBtn = document.querySelectorAll(".vacancy__item");
-    const modalForm = document.querySelector(".modal");
-    const modalClose = document.querySelectorAll(".modal__close");
-
-    formBtn.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        modalForm.style.display = "block";
-      });
-    });
-
-    modalClose.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        modalForm.style.display = "none";
-      });
-    });
-  }
-  if (wrapper.classList.contains("career-page")) {
-    openModal();
-  }
-
   function openImg() {
     const galleryImages = document.querySelectorAll(".gallery__img");
     let enlargedImage = null; // Переменная для хранения ссылки на увеличенное изображение
@@ -120,6 +99,27 @@ document.addEventListener("DOMContentLoaded", function () {
   if (wrapper.classList.contains("blog-page")) {
     toggleSliderText();
   }
+});
+
+$(document).ready(function () {
+  $(".vacancy__item").click(function () {
+    const modalId = $(this).data("modal-id");
+    $(`#modal${modalId}`).fadeIn();
+  });
+
+  $(".vacancy__modal").click(function (e) {
+    if (e.target === this) {
+      $(this).fadeOut();
+    }
+  });
+
+  $(".modal__close").click(function () {
+    $(this).closest(".vacancy__modal").fadeOut();
+  });
+
+  $(".modal").click(function (e) {
+    e.stopPropagation();
+  });
 });
 
 if (typeof ymaps !== "undefined") {

@@ -699,7 +699,7 @@ body {
 .vacancy__button {
   padding: 15px 30px;
 }
-.modal {
+.vacancy__modal {
   display: none;
 }
 .modal__overlay {

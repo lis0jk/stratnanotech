@@ -1,6 +1,3 @@
-.modal {
-  display: none;
-}
 .modal__overlay {
   position: fixed;
   left: 0;
