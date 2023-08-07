@@ -82,14 +82,14 @@
 
     &__entry {
       display: flex;
-      position: relative;
       width: 511px;
     }
 
     &__input {
       border-radius: 5px;
       background: #f6f6f6;
-      width: 72%;
+      border: none;
+      width: 371px;
       padding: 13px 16px;
       &::placeholder {
         color: #a9a9a9;
@@ -101,11 +101,8 @@
     }
 
     &__button {
-      position: absolute;
-      right: 15px;
-      top: 1px;
-
-      padding: 12.5px 15px;
+      margin-left: -20px;
+      padding: 13px 15px;
     }
   }
 }
