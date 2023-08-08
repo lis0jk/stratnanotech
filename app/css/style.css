@@ -1007,6 +1007,9 @@ body {
   align-items: start;
   margin-bottom: 34px;
 }
+.contact__form-check .contact__form-text {
+  margin-bottom: 0;
+}
 .contact__form-checkbox {
   margin-right: 17px;
 }
