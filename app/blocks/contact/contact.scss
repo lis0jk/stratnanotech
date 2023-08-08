@@ -138,6 +138,11 @@
 
     &-item {
       margin-right: 20px;
+      transition: all 0.3s;
+
+      &:hover {
+        scale: 1.1;
+      }
     }
   }
 }

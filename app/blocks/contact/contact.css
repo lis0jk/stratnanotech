@@ -118,4 +118,8 @@
 }
 .contact__media-item {
   margin-right: 20px;
+  transition: all 0.3s;
+}
+.contact__media-item:hover {
+  scale: 1.1;
 }
