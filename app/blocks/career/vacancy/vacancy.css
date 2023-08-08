@@ -21,7 +21,6 @@
   position: relative;
 }
 .vacancy__item {
-  cursor: pointer;
   padding: 12px;
   border-radius: 10px;
   border: 1px solid #d5d5d5;
@@ -31,6 +30,7 @@
   border: 1px solid #ff4500;
 }
 .vacancy__item-title {
+  cursor: pointer;
   display: flex;
   color: #ff4500;
   font-size: 20px;
@@ -63,7 +63,4 @@
 }
 .vacancy__button {
   padding: 15px 30px;
-}
-.vacancy__modal {
-  display: none;
 }

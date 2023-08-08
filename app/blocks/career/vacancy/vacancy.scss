@@ -13,6 +13,7 @@
 
   &__slider {
     overflow: hidden;
+    position: static;
     &-item {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -23,7 +24,6 @@
   }
 
   &__item {
-    cursor: pointer;
     padding: 12px;
     border-radius: 10px;
     border: 1px solid #d5d5d5;
@@ -34,6 +34,7 @@
     }
 
     &-title {
+      cursor: pointer;
       display: flex;
       color: #ff4500;
       font-size: 20px;
@@ -72,9 +73,5 @@
 
   &__button {
     padding: 15px 30px;
-  }
-
-  &__modal {
-    display: none;
   }
 }

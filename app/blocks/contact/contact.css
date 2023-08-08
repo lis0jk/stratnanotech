@@ -25,7 +25,7 @@
 }
 .contact__map {
   width: 50%;
-  max-height: 1000px;
+  max-height: 662px;
 }
 .contact__form {
   width: 50%;
@@ -96,6 +96,9 @@
   display: flex;
   align-items: start;
   margin-bottom: 25px;
+}
+.contact__address-place .contact__address-icon {
+  margin-top: 8px;
 }
 .contact__address-mail {
   display: flex;

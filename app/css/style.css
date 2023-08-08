@@ -646,6 +646,7 @@ body {
 }
 .vacancy__slider {
   overflow: hidden;
+  position: static;
 }
 .vacancy__slider-item {
   display: -ms-grid;
@@ -657,7 +658,6 @@ body {
   position: relative;
 }
 .vacancy__item {
-  cursor: pointer;
   padding: 12px;
   border-radius: 10px;
   border: 1px solid #d5d5d5;
@@ -668,6 +668,7 @@ body {
   border: 1px solid #ff4500;
 }
 .vacancy__item-title {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -703,7 +704,7 @@ body {
 .vacancy__button {
   padding: 15px 30px;
 }
-.vacancy__modal {
+.modal {
   display: none;
 }
 .modal__overlay {
@@ -712,8 +713,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  background: #f1f1f4;
-  opacity: 0.4;
+  background: rgba(41, 41, 41, 0.7);
   z-index: 12;
 }
 .modal__form {
@@ -951,7 +951,7 @@ body {
 }
 .contact__map {
   width: 50%;
-  max-height: 1000px;
+  max-height: 662px;
 }
 .contact__form {
   width: 50%;
@@ -1048,6 +1048,9 @@ body {
   -ms-flex-align: start;
   align-items: start;
   margin-bottom: 25px;
+}
+.contact__address-place .contact__address-icon {
+  margin-top: 8px;
 }
 .contact__address-mail {
   display: -webkit-box;

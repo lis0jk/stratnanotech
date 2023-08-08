@@ -28,7 +28,7 @@
 
   &__map {
     width: 50%;
-    max-height: 1000px;
+    max-height: 662px;
   }
 
   &__form {
@@ -111,6 +111,10 @@
       display: flex;
       align-items: start;
       margin-bottom: 25px;
+
+      .contact__address-icon {
+        margin-top: 8px;
+      }
     }
 
     &-mail {
