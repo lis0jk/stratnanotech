@@ -4,8 +4,9 @@
   justify-content: center;
 
   &-question,
-  &-team {
-    padding: 76px;
+  &-team,
+  &-mission {
+    padding: 57px;
   }
 
   &-technology {
@@ -21,6 +22,10 @@
 
   &-question {
     background: url("../images/end/question.png");
+  }
+
+  &-mission {
+    background: url("../images/end/mission.png");
   }
 
   &-team {

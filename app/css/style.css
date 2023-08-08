@@ -1469,8 +1469,9 @@ body {
   justify-content: center;
 }
 .end-question,
-.end-team {
-  padding: 76px;
+.end-team,
+.end-mission {
+  padding: 57px;
 }
 .end-technology {
   padding: 43px;
@@ -1483,6 +1484,9 @@ body {
 }
 .end-question {
   background: url("../images/end/question.png");
+}
+.end-mission {
+  background: url("../images/end/mission.png");
 }
 .end-team {
   background: url("../images/end/team.png");
