@@ -1,7 +1,19 @@
 .modal {
   display: none;
+  z-index: 10000;
+  position: fixed;
+  width: 838px;
+  max-height: 650px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  overflow-y: scroll;
 }
 .modal__overlay {
+  display: none;
   position: fixed;
   left: 0;
   right: 0;
@@ -9,19 +21,6 @@
   bottom: 0;
   background: rgba(41, 41, 41, 0.7);
   z-index: 12;
-}
-.modal__form {
-  position: absolute;
-  max-width: 838px;
-  max-height: 650px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10000;
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 40px;
-  overflow-y: scroll;
 }
 .modal__close {
   position: absolute;
