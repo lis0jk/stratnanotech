@@ -790,7 +790,7 @@ body {
 .resume__text {
   color: #fff;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1511,7 +1511,7 @@ body {
   margin-right: 100px;
 }
 .end__button {
-  padding: 8px 30px;
+  padding: 18px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
