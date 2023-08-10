@@ -11,7 +11,7 @@
   &__button {
     display: flex;
     align-items: center;
-    padding: 3px 30px 3px 30px;
+    padding: 3px 8px;
     width: fit-content;
 
     &-icon {
@@ -67,75 +67,62 @@
   }
 }
 
-.slider {
-  &-main {
-    width: 70%;
-    padding: calc(20px + 30 * ((100vw - 270px) / 1650));
-    height: 100%;
-  }
+.slider-main {
+  width: 70%;
+  padding: calc(20px + 30 * ((100vw - 270px) / 1650));
+  height: 100%;
+}
 
-  &-title {
-    margin-bottom: 21px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: calc(14px + 8 * ((100vw - 270px) / 1650));
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-  }
+.slider-title {
+  margin-bottom: 21px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(14px + 8 * ((100vw - 270px) / 1650));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
 
-  &-text {
-    text-align: justify;
-    margin-bottom: 33px;
-    font-weight: normal;
-    font-size: calc(12px + 4 * ((100vw - 270px) / 1650));
-    line-height: 182.18%;
-    max-height: 100px;
-    overflow: hidden;
-    position: relative;
+.slider-text {
+  text-align: justify;
+  margin-bottom: 33px;
+  font-weight: normal;
+  font-size: calc(12px + 4 * ((100vw - 270px) / 1650));
+  line-height: 182.18%;
+  max-height: 100px;
+  overflow: hidden;
+  position: relative;
+}
 
-    .bottom {
-      position: absolute;
-      bottom: 0;
-      background: linear-gradient(
-        to bottom,
-        rgb(255 217 29 / 0%),
-        rgb(255, 255, 255) 90%
-      );
-      width: 100%;
-      height: 60px;
-      opacity: 1;
-      transition: 0.3s;
-    }
-  }
+.slider-text-open {
+  max-height: none;
+}
 
-  &-up {
-    display: none;
-  }
-
-  &-bottom {
-    width: 100%;
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    align-items: start;
-
-    &--blog {
-      align-items: end;
-    }
-  }
+.bottom {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(255 217 29 / 0%),
+    rgb(255, 255, 255) 90%
+  );
+  width: 100%;
+  height: 60px;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .read-more-checker {
   opacity: 0;
   position: absolute;
 }
-.read-more-checker:checked ~ .slider-text {
-  max-height: none;
-}
 
 .read-more-checker:checked ~ .slider-text .bottom {
   opacity: 0;
   transition: 0.3s;
+}
+
+.hidden {
+  display: none;
 }

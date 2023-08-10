@@ -99,6 +99,21 @@ document.addEventListener("DOMContentLoaded", function () {
   if (wrapper.classList.contains("blog-page")) {
     toggleSliderText();
   }
+
+  function openArticle() {
+    const readMoreButtons = document.querySelectorAll(".read-more-button");
+
+    readMoreButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const sliderText = button.nextElementSibling;
+
+        sliderText.classList.toggle("slider-text-open");
+        button.querySelector(".slider-down").classList.toggle("hidden");
+        button.querySelector(".slider-up").classList.toggle("hidden");
+      });
+    });
+  }
+  openArticle();
 });
 
 if (typeof ymaps !== "undefined") {

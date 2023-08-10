@@ -13,7 +13,6 @@
 
   &__slider {
     overflow: hidden;
-    position: static;
     &-item {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -28,13 +27,13 @@
     border-radius: 10px;
     border: 1px solid #d5d5d5;
     transition: all 0.3s;
+    cursor: pointer;
 
     &:hover {
       border: 1px solid #ff4500;
     }
 
     &-title {
-      cursor: pointer;
       display: flex;
       color: #ff4500;
       font-size: 20px;
