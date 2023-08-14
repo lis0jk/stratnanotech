@@ -81,25 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
     openImg();
   }
 
-  function toggleSliderText() {
-    const checkbox = document.getElementById("read-more-checker");
-    const sliderUpIcon = document.querySelector(".slider-up");
-    const sliderDownIcon = document.querySelector(".slider-down");
-
-    checkbox.addEventListener("change", function () {
-      if (this.checked) {
-        sliderUpIcon.style.display = "block";
-        sliderDownIcon.style.display = "none";
-      } else {
-        sliderUpIcon.style.display = "none";
-        sliderDownIcon.style.display = "block";
-      }
-    });
-  }
-  if (wrapper.classList.contains("blog-page")) {
-    toggleSliderText();
-  }
-
   function openArticle() {
     document.querySelectorAll(".read-more-button").forEach(function (button) {
       button.addEventListener("click", function (event) {
