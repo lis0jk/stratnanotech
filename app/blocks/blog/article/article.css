@@ -24,7 +24,7 @@
   padding-bottom: 16px;
 }
 .article__img {
-  width: 50%;
+  width: 100%;
   float: right;
   margin: 27px;
   object-fit: cover;

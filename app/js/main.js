@@ -101,15 +101,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function openArticle() {
-    const readMoreButtons = document.querySelectorAll(".read-more-button");
-
-    readMoreButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const sliderText = button.nextElementSibling;
+    document.querySelectorAll(".read-more-button").forEach(function (button) {
+      button.addEventListener("click", function (event) {
+        const sliderText = event.currentTarget.nextElementSibling;
+        const bottomElement = sliderText.querySelector(".bottom");
 
         sliderText.classList.toggle("slider-text-open");
-        button.querySelector(".slider-down").classList.toggle("hidden");
-        button.querySelector(".slider-up").classList.toggle("hidden");
+        bottomElement.classList.toggle("hidden");
+
+        const sliderDownIcon =
+          event.currentTarget.querySelector(".slider-down");
+        const sliderUpIcon = event.currentTarget.querySelector(".slider-up");
+        sliderDownIcon.classList.toggle("hidden");
+        sliderUpIcon.classList.toggle("hidden");
       });
     });
   }
