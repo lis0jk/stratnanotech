@@ -83,6 +83,7 @@
   padding: 18px 31px;
   display: flex;
   margin: 0 auto;
+  width: fit-content;
 }
 .contact__address {
   display: flex;

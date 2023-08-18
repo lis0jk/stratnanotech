@@ -36,7 +36,7 @@
 .header__submenu .header__menu-item:hover {
   border-left: 2px solid rgba(255, 69, 0, 0.9);
 }
-.header__submenu .header__menu-item:hover .header__submenu li a {
+.header__submenu .header__menu-item:hover li a {
   color: #fff;
   background: rgba(255, 69, 0, 0.9);
 }
@@ -50,4 +50,13 @@
   color: #6a6868;
   border-radius: 5px;
   background: #fff;
+}
+
+.header__submenu .active-link .header__menu-item li a {
+  color: #fff;
+  background: rgba(255, 69, 0, 0.9);
+}
+
+.header__submenu .active-link .header__menu-item {
+  border-left: 2px solid rgba(255, 69, 0, 0.9);
 }

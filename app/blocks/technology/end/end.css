@@ -46,6 +46,7 @@
 .end__button {
   padding: 18px 30px;
   display: flex;
+  width: fit-content;
 }
 .end__button-tech {
   margin: 0 auto;
