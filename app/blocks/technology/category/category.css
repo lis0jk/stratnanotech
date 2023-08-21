@@ -21,15 +21,85 @@
 .category__button:hover {
   background: #ff4500;
 }
-.category__button:hover .category__button-icon--up {
-  display: block;
-}
-.category__button:hover .category__button-icon--down {
-  display: none;
-}
 .category__button-icon {
   margin-left: 10px;
 }
 .category__button-icon--up {
   display: none;
+}
+
+.jlmf-label[for],
+.jlmf-sublabel[for] {
+  cursor: pointer;
+}
+
+.equipment__role-label {
+  display: flex !important;
+  flex-direction: row;
+  color: #6a6868;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.equipment__role-label::before {
+  position: relative;
+  margin-right: 6px;
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 3px;
+  border: 0.5px solid #ff6755;
+  background-color: #eff6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipment__role-checkbox:checked + .equipment__role-label::before {
+  content: "+";
+  color: #ff4500;
+  font-size: 16px;
+}
+
+.jlcontentfieldsfilter input {
+  height: 32px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.jlmf-checkbox,
+.jlmf-radio {
+  display: inline-block;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+.equipment__role-checkbox {
+  display: none !important;
+}
+
+.equipment__role-item {
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.equipment__role-list {
+  display: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.equipment__role-list.active {
+  display: flex;
+}
+
+.category__button.active .category__button-icon--down {
+  display: none;
+}
+
+.category__button.active .category__button-icon--up {
+  display: block;
 }

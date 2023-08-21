@@ -20,7 +20,7 @@
           <section class="category">
   <h1 class="category__title">Серии оборудования</h1>
   <div class="category__block">
-    <button class="category__button button">
+    <button class="category__button button" data-modal-id="1">
       Категория
       <img
         class="category__button-icon category__button-icon--down"
@@ -33,7 +33,7 @@
         alt=""
       />
     </button>
-    <button class="category__button button">
+    <button class="category__button button" data-modal-id="2">
       Технология
       <img
         class="category__button-icon category__button-icon--down"
@@ -46,7 +46,7 @@
         alt=""
       />
     </button>
-    <button class="category__button button">
+    <button class="category__button button" data-modal-id="3">
       Назначение (отрасль)
       <img
         class="category__button-icon category__button-icon--down"
@@ -59,6 +59,162 @@
         alt=""
       />
     </button>
+  </div>
+
+  <div class="category__info">
+    <ul class="equipment__role-list equipment-list" data-modal-id="1">
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Нанесение покрытий PVD</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Нанесение покрытий СVD</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Плазмо-химическое травление</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Ионная имплантация</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Загрузка-выгрузка</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Герметичный контейнер для кристального производства</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Плавильные печи</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Разработка оборудования на заказ</label
+        >
+      </li>
+    </ul>
+
+    <ul class="equipment__role-list equipment-list" data-modal-id="2">
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >CVD технологии</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label">Плазмохимия</label>
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >PVD технологии</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Технологии травления</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Подготовки поверхности</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Контроль на всех стадиях</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Технологии/методы нагрева</label
+        >
+      </li>
+    </ul>
+
+    <ul class="equipment__role-list equipment-list" data-modal-id="3">
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label">Оптика</label>
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Микроэлектроника</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Дисплейное производство</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Производство солнечных батарей</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Космическая промышленность</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label"
+          >Машиностроение</label
+        >
+      </li>
+
+      <li class="equipment__role-item">
+        <input type="checkbox" class="jlmf-checkbox equipment__role-checkbox" />
+        <label class="jlmf-sublabel equipment__role-label">ЭКБ</label>
+      </li>
+    </ul>
   </div>
 </section>
 

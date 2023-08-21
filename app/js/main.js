@@ -99,6 +99,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   openArticle();
+
+  function checkSeries() {
+    const buttons = document.querySelectorAll(".category__button");
+    const lists = document.querySelectorAll(".equipment__role-list");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const modalId = this.getAttribute("data-modal-id");
+        const targetList = document.querySelector(
+          `.equipment__role-list[data-modal-id="${modalId}"]`
+        );
+
+        lists.forEach((list) => {
+          if (list !== targetList) {
+            list.classList.remove("active");
+          }
+        });
+
+        targetList.classList.toggle("active");
+        this.classList.toggle("active");
+      });
+    });
+  }
+  checkSeries();
 });
 
 if (typeof ymaps !== "undefined") {
