@@ -101,24 +101,49 @@ document.addEventListener("DOMContentLoaded", function () {
   openArticle();
 
   function checkSeries() {
-    const buttons = document.querySelectorAll(".category__button");
-    const lists = document.querySelectorAll(".equipment__role-list");
+    const categoryButtons = document.querySelectorAll(".category__button");
+    const categoryBlock = document.querySelector(".category__block");
 
-    buttons.forEach((button) => {
-      button.addEventListener("click", function () {
-        const modalId = this.getAttribute("data-modal-id");
-        const targetList = document.querySelector(
-          `.equipment__role-list[data-modal-id="${modalId}"]`
-        );
+    let activeCategory = null;
 
-        lists.forEach((list) => {
-          if (list !== targetList) {
-            list.classList.remove("active");
-          }
-        });
+    categoryButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const parentBlock = button.closest(".category__block-item");
+        const roleList = parentBlock.querySelector(".equipment__role-list");
+        const downIcon = button.querySelector(".category__button-icon--down");
+        const upIcon = button.querySelector(".category__button-icon--up");
 
-        targetList.classList.toggle("active");
-        this.classList.toggle("active");
+        if (activeCategory !== null) {
+          const prevParentBlock = activeCategory.closest(
+            ".category__block-item"
+          );
+          const prevRoleList = prevParentBlock.querySelector(
+            ".equipment__role-list"
+          );
+          const prevDownIcon = activeCategory.querySelector(
+            ".category__button-icon--down"
+          );
+          const prevUpIcon = activeCategory.querySelector(
+            ".category__button-icon--up"
+          );
+          prevRoleList.style.display = "none";
+          prevDownIcon.style.display = "inline-block";
+          prevUpIcon.style.display = "none";
+        }
+
+        if (activeCategory === button) {
+          roleList.style.display = "none";
+          downIcon.style.display = "inline-block";
+          upIcon.style.display = "none";
+          activeCategory = null;
+          categoryBlock.style.marginBottom = "30px";
+        } else {
+          roleList.style.display = "flex";
+          downIcon.style.display = "none";
+          upIcon.style.display = "inline-block";
+          activeCategory = button;
+          categoryBlock.style.marginBottom = "160px";
+        }
       });
     });
   }

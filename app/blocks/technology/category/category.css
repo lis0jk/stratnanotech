@@ -10,6 +10,7 @@
 .category__block {
   display: flex;
   margin-bottom: 30px;
+  position: relative;
 }
 .category__button {
   padding: 10px;
@@ -90,16 +91,7 @@
   display: none;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.equipment__role-list.active {
-  display: flex;
-}
-
-.category__button.active .category__button-icon--down {
-  display: none;
-}
-
-.category__button.active .category__button-icon--up {
-  display: block;
+  position: absolute;
+  left: 0;
+  top: 66px;
 }
