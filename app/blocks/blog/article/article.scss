@@ -129,3 +129,21 @@
   width: fit-content;
   height: fit-content;
 }
+
+@media (max-width: 700px) {
+  .footer__container {
+    flex-wrap: wrap;
+  }
+
+  .footer__column:nth-child(3) {
+    width: 100%;
+  }
+
+  .footer__bottom-content .footer__address-container > div {
+    width: 100%;
+  }
+
+  .footer .footer__column .footer__bottom-content {
+    gap: 20px;
+  }
+}
