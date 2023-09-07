@@ -23,10 +23,13 @@
   letter-spacing: 1.2px;
   padding-bottom: 16px;
 }
+.article__info {
+  margin-bottom: 88px;
+}
 .article__img {
-  width: 100%;
+  width: 40%;
   float: right;
-  margin: 27px;
+  margin: 0 0 40px 40px;
   object-fit: cover;
 }
 .article__date {
@@ -50,6 +53,7 @@
   font-weight: 400;
   line-height: 182.182%;
   margin-bottom: 40px;
+  text-align: justify;
 }
 .article__author {
   display: flex;
