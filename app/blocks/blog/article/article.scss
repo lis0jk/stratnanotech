@@ -78,6 +78,7 @@
     &-photo {
       border-radius: 50%;
       object-fit: cover;
+      width: 30%;
       margin-right: 30px;
     }
 
@@ -145,5 +146,17 @@
 
   .footer .footer__column .footer__bottom-content {
     gap: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .article {
+    &__author {
+      align-items: start;
+      flex-direction: column;
+      &-main {
+        margin-bottom: 20px;
+      }
+    }
   }
 }

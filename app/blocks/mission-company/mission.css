@@ -1,28 +1,25 @@
-.parameters__title {
-  color: #292929;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  margin-bottom: 21px;
-}
-
 .mission-company {
-  margin-bottom: 88px;
+  margin-bottom: calc(35px + 53 * ((100vw - 320px) / 1600));
 }
 .mission-company__title {
   margin-bottom: 47px;
   color: #292929;
-  font-size: 40px;
+  font-size: calc(30px + 10 * ((100vw - 320px) / 1600));
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   letter-spacing: 1.2px;
 }
 .mission-company__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 88px;
+  margin-bottom: calc(35px + 53 * ((100vw - 320px) / 1600));
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: start;
 }
 .mission-company__text {
@@ -34,14 +31,22 @@
   max-width: 45%;
 }
 .mission-company__img {
+  -o-object-fit: cover;
   object-fit: cover;
   max-width: 40%;
 }
 .mission-company__eco {
   background: url("../images/mission/travlenie-back.png");
   padding: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 .mission-company__eco-title {
@@ -64,26 +69,32 @@
   padding-bottom: 23px;
   max-width: 655px;
 }
-
-.parameters__table {
-  width: 100%;
-  margin-bottom: 88px;
+@media (max-width: 900px) {
+  .mission-company__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .mission-company__text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .mission-company__img {
+    max-width: 100%;
+  }
 }
-
-.parameters__table td {
-  padding: 10px;
-  border: 1px solid #c1c1c1;
-}
-
-.parameters__table td:first-child {
-  width: 50%;
-}
-
-.parameters .tr-orange td {
-  background-color: #ff4500 !important;
-  color: #fff !important;
-}
-
-.parameters .td-big {
-  text-align: center;
+@media (max-width: 650px) {
+  .mission-company__eco {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .mission-company__eco-title,
+  .mission-company__eco-text {
+    text-align: center;
+  }
 }

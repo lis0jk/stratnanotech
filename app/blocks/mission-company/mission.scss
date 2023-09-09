@@ -1,9 +1,9 @@
 .mission-company {
-  margin-bottom: 88px;
+  @include adaptiv-marginBottom(88, 35);
   &__title {
     margin-bottom: 47px;
     color: #292929;
-    font-size: 40px;
+    @include adaptiv-font(40, 30);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -13,7 +13,7 @@
   &__info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 88px;
+    @include adaptiv-marginBottom(88, 35);
     align-items: start;
   }
 
@@ -58,6 +58,32 @@
       line-height: 182.182%;
       padding-bottom: 23px;
       max-width: 655px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .mission-company {
+    &__info {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__text {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    &__img {
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .mission-company {
+    &__eco {
+      align-items: center;
+      &-title,
+      &-text {
+        text-align: center;
+      }
     }
   }
 }

@@ -19,14 +19,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (wrapper.classList.contains("about-page")) {
     aboutPageSlider.addSlider(".development__slider", {
-      items: 2,
-      margin: 40,
+      responsive: {
+        0: { items: 1, margin: 20 },
+        1100: { items: 2, margin: 40 },
+      },
     });
   }
 
   if (wrapper.classList.contains("career-page")) {
     careerPageSlider.addSlider(".vacancy__slider", {
-      items: 1,
+      responsive: {
+        0: { items: 1 },
+        750: { items: 2, margin: 40 },
+      },
     });
   }
 
@@ -38,7 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (wrapper.classList.contains("libra-page")) {
     libraPageSlider.addSlider(".libra-about__slider", {
-      items: 1,
+      responsive: {
+        0: { items: 1 },
+        650: { items: 2, margin: 20 },
+        1000: { items: 1 },
+      },
     });
   }
 
@@ -136,17 +145,36 @@ document.addEventListener("DOMContentLoaded", function () {
           downIcon.style.display = "inline-block";
           upIcon.style.display = "none";
           activeCategory = null;
-          categoryBlock.style.marginBottom = "30px";
+          if (window.innerWidth >= 640) {
+            categoryBlock.style.marginBottom = "30px";
+          }
         } else {
           roleList.style.display = "flex";
           downIcon.style.display = "none";
           upIcon.style.display = "inline-block";
           activeCategory = button;
-          categoryBlock.style.marginBottom = "160px";
+          if (window.innerWidth >= 640) {
+            categoryBlock.style.marginBottom = "160px";
+          }
         }
       });
     });
   }
+
+  // Добавьте обработчик изменения размера окна для проверки ширины экрана.
+  window.addEventListener("resize", () => {
+    if (activeCategory !== null) {
+      const categoryBlock = document.querySelector(".category__block");
+      if (window.innerWidth < 640) {
+        categoryBlock.style.marginBottom = "30px";
+      } else {
+        categoryBlock.style.marginBottom = "160px";
+      }
+    }
+  });
+
+  // Вызовите функцию checkSeries() при загрузке страницы или по необходимости.
+
   checkSeries();
 });
 

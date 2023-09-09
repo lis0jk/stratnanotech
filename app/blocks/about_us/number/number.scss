@@ -1,5 +1,5 @@
 .number {
-  margin-bottom: 88px;
+  @include adaptiv-marginBottom(88, 35);
 
   &__title {
     margin-bottom: 28px;
@@ -13,11 +13,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 88px;
+    @include adaptiv-marginBottom(88, 35);
 
     &-item {
       position: relative;
       padding-left: 34px;
+      min-width: 300px;
       width: 30%;
 
       &::before {
@@ -62,6 +63,29 @@
       font-weight: 400;
       line-height: 129.682%;
       color: #6a6868;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .number {
+    &__block {
+      justify-content: center;
+      &-item {
+        &:not(:last-child) {
+          margin-bottom: 25px;
+        }
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .number {
+    &__block {
+      &-item {
+        width: 100%;
+      }
     }
   }
 }

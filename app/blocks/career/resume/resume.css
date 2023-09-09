@@ -2,20 +2,35 @@
   width: 100%;
   background: url("../images/career/resume.png");
   padding: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 100px;
-  margin-bottom: 88px;
+  margin-bottom: calc(35px + 53 * ((100vw - 320px) / 1600));
 }
 .resume__text {
   color: #fff;
   text-align: center;
-  font-size: 30px;
+  font-size: calc(25px + 5 * ((100vw - 320px) / 1600));
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .resume__button {
   padding: 18px 30px;
+}
+@media (max-width: 855px) {
+  .resume {
+    gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }

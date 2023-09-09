@@ -47,6 +47,7 @@
   padding: 18px 30px;
   display: flex;
   width: fit-content;
+  text-align: center;
 }
 .end__button-tech {
   margin: 0 auto;
@@ -93,4 +94,29 @@
 .end-mail__button {
   margin-left: -20px;
   padding: 13px 15px;
+}
+@media (max-width: 1000px) {
+  .end-mail__box {
+    flex-direction: column;
+  }
+  .end-mail__text {
+    margin-bottom: 20px;
+  }
+  .end-mail__input,
+  .end-mail__entry {
+    max-width: 511px;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .end {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .end__text {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
 }

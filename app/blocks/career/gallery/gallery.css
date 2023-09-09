@@ -1,12 +1,11 @@
-@charset "UTF-8";
 .gallery {
-  margin-bottom: 88px;
+  margin-bottom: calc(35px + 53 * ((100vw - 320px) / 1600));
 }
 .gallery__slider-item {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 56px;
-  margin-bottom: 56px;
+  grid-gap: calc(10px + 46 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(25px + 31 * ((100vw - 320px) / 1600));
 }
 .gallery__img {
   cursor: pointer;

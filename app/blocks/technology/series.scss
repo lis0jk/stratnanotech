@@ -1,19 +1,19 @@
 .series {
   &__download {
     background: url("../images/mission/series.png");
-    padding: 66px;
+    @include adaptiv-padding(66, 35);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 88px;
+    @include adaptiv-marginBottom(88, 35);
   }
 
   &__info {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    margin-bottom: 88px;
+    @include adaptiv-marginBottom(88, 35);
   }
 
   &__img {
@@ -28,5 +28,19 @@
     font-style: normal;
     font-weight: 400;
     line-height: 182.182%;
+  }
+}
+@media (max-width: 1000px) {
+  .series {
+    &__info {
+      flex-direction: column;
+    }
+    &__img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__text {
+      width: 100%;
+    }
   }
 }

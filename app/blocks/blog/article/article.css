@@ -70,6 +70,7 @@
   border-radius: 50%;
   object-fit: cover;
   margin-right: 30px;
+  width: 30%;
 }
 .article__author-info {
   margin-right: 30px;
@@ -113,6 +114,16 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   width: fit-content;
   height: fit-content;
+}
+
+@media (max-width: 750px) {
+  .article__author {
+    align-items: start;
+    flex-direction: column;
+  }
+  .article__author-main {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 700px) {

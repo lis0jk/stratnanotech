@@ -1,12 +1,12 @@
 .gallery {
-  margin-bottom: 88px;
+  @include adaptiv-marginBottom(88, 35);
 
   &__slider {
     &-item {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 56px;
-      margin-bottom: 56px;
+      @include adaptiv-gridGap(56, 10);
+      @include adaptiv-marginBottom(56, 25);
     }
   }
 

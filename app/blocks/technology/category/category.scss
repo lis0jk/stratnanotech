@@ -94,3 +94,19 @@
   left: 0;
   top: 66px;
 }
+@media (max-width: 640px) {
+  .category {
+    &__block {
+      flex-direction: column;
+      &-item {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+    }
+  }
+  .equipment__role-list {
+    position: relative;
+    top: 0;
+    margin-top: 10px;
+  }
+}

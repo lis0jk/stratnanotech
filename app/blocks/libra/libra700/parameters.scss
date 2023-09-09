@@ -10,7 +10,7 @@
 
   &__table {
     width: 100%;
-    margin-bottom: 88px;
+    @include adaptiv-marginBottom(88, 35);
 
     td {
       padding: 10px;

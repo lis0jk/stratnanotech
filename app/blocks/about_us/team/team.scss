@@ -1,7 +1,8 @@
 .team {
-  background: url("../images/about_us/team.png");
-  padding-top: 67px;
-  padding-bottom: 106px;
+  background: url("../images/about_us/team.png") center no-repeat;
+  background-size: cover;
+  @include adaptiv-paddingTop(67, 30);
+  @include adaptiv-paddingBottom(106, 40);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -9,13 +10,13 @@
 
   &__title {
     color: #fff;
-    font-size: 40px;
+    @include adaptiv-font(40, 30);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1.2px;
     text-align: center;
-    padding-bottom: 58px;
+    @include adaptiv-paddingBottom(58, 30);
   }
 
   &__info {
@@ -82,5 +83,22 @@
   &__button {
     padding: 8px 12px;
     width: fit-content;
+  }
+}
+
+@media (max-width: 950px) {
+  .team {
+    &__info {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+      width: 90%;
+    }
+    &__text {
+      max-width: fit-content;
+    }
   }
 }

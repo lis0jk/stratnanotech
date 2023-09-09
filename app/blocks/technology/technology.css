@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .technology__link {
   padding: 18px 30px;

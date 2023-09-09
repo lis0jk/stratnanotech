@@ -75,3 +75,9 @@ body {
     background: #ff4500;
   }
 }
+
+@media (max-width: 1300px) {
+  .container {
+    width: 90%;
+  }
+}

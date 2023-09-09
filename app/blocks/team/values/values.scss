@@ -1,5 +1,5 @@
 .values {
-  margin-bottom: 88px;
+  @include adaptiv-marginBottom(88, 35);
 
   &__title {
     margin-bottom: 43px;
@@ -14,6 +14,7 @@
   &__block {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -59,5 +60,25 @@
     font-style: normal;
     font-weight: 400;
     line-height: 129.682%;
+  }
+}
+@media (max-width: 1100px) {
+  .values {
+    &__item {
+      width: 31%;
+    }
+  }
+}
+@media (max-width: 810px) {
+  .values {
+    &__block {
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
   }
 }
