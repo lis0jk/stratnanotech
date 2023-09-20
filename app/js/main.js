@@ -109,6 +109,34 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   openArticle();
 
+  function openDate() {
+    document.querySelectorAll(".read-more").forEach(function (button) {
+      button.addEventListener("click", function (event) {
+        const sliderText = event.currentTarget.nextElementSibling;
+        const bottomElement = sliderText.querySelector(".bottom");
+
+        sliderText.classList.toggle("slider-text-open");
+        bottomElement.classList.toggle("hidden");
+
+        const sliderDownIcon = event.currentTarget.querySelector(
+          ".development__slider-open"
+        );
+        const sliderUpIcon = event.currentTarget.querySelector(
+          ".development__slider-close"
+        );
+        sliderDownIcon.classList.toggle("hidden");
+        sliderUpIcon.classList.toggle("hidden");
+
+        if (bottomElement.classList.contains("hidden")) {
+          sliderBlock.style.height = "max-content";
+        } else {
+          sliderBlock.style.height = "100px";
+        }
+      });
+    });
+  }
+  openDate();
+
   function checkSeries() {
     const categoryButtons = document.querySelectorAll(".category__button");
     const categoryBlock = document.querySelector(".category__block");
