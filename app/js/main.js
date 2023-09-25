@@ -138,48 +138,32 @@ document.addEventListener("DOMContentLoaded", function () {
   openDate();
 
   function checkSeries() {
-    const categoryButtons = document.querySelectorAll(".category__button");
-    const categoryBlock = document.querySelector(".category__block");
+    const categoryButtons = document.querySelectorAll(".equipment__role-btn ");
+    const categoryBlock = document.querySelector(".equipment__role");
 
     let activeCategory = null;
 
     categoryButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        const parentBlock = button.closest(".category__block-item");
+        const parentBlock = button.closest(".jlmf-section");
         const roleList = parentBlock.querySelector(".equipment__role-list");
-        const downIcon = button.querySelector(".category__button-icon--down");
-        const upIcon = button.querySelector(".category__button-icon--up");
 
         if (activeCategory !== null) {
-          const prevParentBlock = activeCategory.closest(
-            ".category__block-item"
-          );
+          const prevParentBlock = activeCategory.closest(".jlmf-section");
           const prevRoleList = prevParentBlock.querySelector(
             ".equipment__role-list"
           );
-          const prevDownIcon = activeCategory.querySelector(
-            ".category__button-icon--down"
-          );
-          const prevUpIcon = activeCategory.querySelector(
-            ".category__button-icon--up"
-          );
           prevRoleList.style.display = "none";
-          prevDownIcon.style.display = "inline-block";
-          prevUpIcon.style.display = "none";
         }
 
         if (activeCategory === button) {
           roleList.style.display = "none";
-          downIcon.style.display = "inline-block";
-          upIcon.style.display = "none";
           activeCategory = null;
           if (window.innerWidth >= 640) {
             categoryBlock.style.marginBottom = "30px";
           }
         } else {
           roleList.style.display = "flex";
-          downIcon.style.display = "none";
-          upIcon.style.display = "inline-block";
           activeCategory = button;
           if (window.innerWidth >= 640) {
             categoryBlock.style.marginBottom = "160px";

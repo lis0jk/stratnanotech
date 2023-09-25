@@ -7,26 +7,27 @@
   letter-spacing: 1.2px;
   margin-bottom: 47px;
 }
-.category__block {
+.equipment__role {
   display: flex;
   margin-bottom: 30px;
   position: relative;
 }
-.category__button {
+
+.equipment__role-btn {
   padding: 10px;
   background: #739db2;
   display: flex;
   align-items: center;
   margin-right: 34px;
+  cursor: pointer;
 }
-.category__button:hover {
+
+.equipment__role-btn:hover {
   background: #ff4500;
 }
-.category__button-icon {
+
+.equipment-btn__icon {
   margin-left: 10px;
-}
-.category__button-icon--up {
-  display: none;
 }
 
 .jlmf-label[for],

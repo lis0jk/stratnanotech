@@ -8,32 +8,29 @@
     letter-spacing: 1.2px;
     margin-bottom: 47px;
   }
+}
 
-  &__block {
-    display: flex;
-    margin-bottom: 30px;
-    position: relative;
+.equipment__role {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.equipment__role-btn {
+  padding: 10px;
+  background: #739db2;
+  display: flex;
+  align-items: center;
+  margin-right: 34px;
+  cursor: pointer;
+
+  &:hover {
+    background: #ff4500;
   }
+}
 
-  &__button {
-    padding: 10px;
-    background: #739db2;
-    display: flex;
-    align-items: center;
-    margin-right: 34px;
-
-    &:hover {
-      background: #ff4500;
-    }
-
-    &-icon {
-      margin-left: 10px;
-
-      &--up {
-        display: none;
-      }
-    }
-  }
+.equipment-btn__icon {
+  margin-left: 10px;
 }
 
 .jlmf-label[for],
