@@ -53,35 +53,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function openImg() {
     const galleryImages = document.querySelectorAll(".gallery__img");
-    let enlargedImage = null; // Переменная для хранения ссылки на увеличенное изображение
+    let enlargedImage = null;
 
     galleryImages.forEach((image) => {
       image.addEventListener("click", () => {
-        if (enlargedImage) return; // Проверяем, что увеличенное изображение уже не открыто
+        if (enlargedImage) return;
 
-        // Создаем элемент для увеличенной картинки
         enlargedImage = document.createElement("div");
         enlargedImage.classList.add("enlarged-image");
 
-        // Создаем элемент для крестика и добавляем его в увеличенную картинку
         const closeButton = document.createElement("span");
         closeButton.classList.add("close-button");
         closeButton.innerHTML = "&times;";
         enlargedImage.appendChild(closeButton);
 
-        // Создаем элемент для изображения и добавляем его в увеличенную картинку
         const imageElement = document.createElement("img");
         imageElement.src = image.src;
         imageElement.alt = image.alt;
         enlargedImage.appendChild(imageElement);
 
-        // Добавляем элемент увеличенной картинки на страницу
         document.body.appendChild(enlargedImage);
 
-        // Обработчик события для закрытия увеличенной картинки при клике на крестик
         closeButton.addEventListener("click", () => {
           document.body.removeChild(enlargedImage);
-          enlargedImage = null; // Сбрасываем ссылку на увеличенное изображение, чтобы снова можно было открыть при клике на другое изображение
+          enlargedImage = null;
         });
       });
     });
@@ -173,10 +168,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Добавьте обработчик изменения размера окна для проверки ширины экрана.
   window.addEventListener("resize", () => {
     if (activeCategory !== null) {
-      const categoryBlock = document.querySelector(".category__block");
+      const categoryBlock = document.querySelector(".equipment__role");
       if (window.innerWidth < 640) {
         categoryBlock.style.marginBottom = "30px";
       } else {
@@ -184,9 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
-
-  // Вызовите функцию checkSeries() при загрузке страницы или по необходимости.
-
   checkSeries();
 });
 
@@ -195,13 +186,11 @@ if (typeof ymaps !== "undefined") {
     var coords1 = [55.749633, 37.537434];
     var coords2 = [53.90239, 27.639733];
 
-    // Создание карты
     var map = new ymaps.Map("map", {
-      center: [54.826308, 35.89043], // Центр карты (может быть любая другая точка по вашему выбору)
-      zoom: 5, // Масштаб карты (число от 0 до 19)
+      center: [54.826308, 35.89043],
+      zoom: 5,
     });
 
-    // Добавление метки для первого места
     var placemark1 = new ymaps.Placemark(
       coords1,
       {},
@@ -214,7 +203,6 @@ if (typeof ymaps !== "undefined") {
     );
     map.geoObjects.add(placemark1);
 
-    // Добавление метки для второго места
     var placemark2 = new ymaps.Placemark(
       coords2,
       {},
