@@ -37,25 +37,45 @@
     display: block;
     width: 325px;
     height: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
-    &--first {
-      background: url("../images/about_us/provider.svg");
-      &:hover {
-        background: url("../images/about_us/provider-hover.svg");
-      }
+    &-pentagon--active,
+    &-first--active,
+    &-second--active,
+    &-third--active {
+      display: none;
     }
 
-    &--second {
-      background: url("../images/about_us/tasks.svg");
-      &:hover {
-        background: url("../images/about_us/tasks-hover.svg");
-      }
+    &-img {
+      position: absolute;
+      top: 80px;
+      left: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
 
-    &--third {
-      background: url("../images/about_us/obligations.svg");
-      &:hover {
-        background: url("../images/about_us/obligations-hover.svg");
+    &-text {
+      max-width: 100px;
+      text-align: center;
+    }
+
+    &:hover {
+      .advantages__item-pentagon,
+      .advantages__item-first,
+      .advantages__item-second,
+      .advantages__item-third {
+        display: none;
+      }
+      .advantages__item-pentagon--active,
+      .advantages__item-first--active,
+      .advantages__item-second--active,
+      .advantages__item-third--active {
+        display: block;
       }
     }
   }

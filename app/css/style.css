@@ -346,24 +346,54 @@ body {
   display: block;
   width: 325px;
   height: 325px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
 }
-.advantages__item--first {
-  background: url("../images/about_us/provider.svg");
+.advantages__item-pentagon--active,
+.advantages__item-first--active,
+.advantages__item-second--active,
+.advantages__item-third--active {
+  display: none;
 }
-.advantages__item--first:hover {
-  background: url("../images/about_us/provider-hover.svg");
+.advantages__item-img {
+  position: absolute;
+  top: 80px;
+  left: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
 }
-.advantages__item--second {
-  background: url("../images/about_us/tasks.svg");
+.advantages__item-text {
+  max-width: 100px;
+  text-align: center;
 }
-.advantages__item--second:hover {
-  background: url("../images/about_us/tasks-hover.svg");
+.advantages__item:hover .advantages__item-pentagon,
+.advantages__item:hover .advantages__item-first,
+.advantages__item:hover .advantages__item-second,
+.advantages__item:hover .advantages__item-third {
+  display: none;
 }
-.advantages__item--third {
-  background: url("../images/about_us/obligations.svg");
-}
-.advantages__item--third:hover {
-  background: url("../images/about_us/obligations-hover.svg");
+.advantages__item:hover .advantages__item-pentagon--active,
+.advantages__item:hover .advantages__item-first--active,
+.advantages__item:hover .advantages__item-second--active,
+.advantages__item:hover .advantages__item-third--active {
+  display: block;
 }
 .mission {
   margin-bottom: calc(35px + 53 * (100vw - 320px) / 1600);
@@ -1920,15 +1950,18 @@ body {
   top: 66px;
 }
 @media (max-width: 640px) {
-  .category__block {
+  .equipment__role {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .category__block-item {
+  .equipment__role-btn {
     margin-bottom: 15px;
     margin-right: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .equipment__role-list {
     position: relative;
